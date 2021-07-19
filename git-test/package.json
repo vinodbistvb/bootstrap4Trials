@@ -1,0 +1,24 @@
+{
+  "name": "bootstrap4trials",
+  "version": "1.0.0",
+  "description": "learing git nad node",
+  "main": "index.html",
+  "scripts": {
+    "start":"npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite":"lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinodbistvb/bootstrap4Trials.git"
+  },
+  "author": "Vinod",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vinodbistvb/bootstrap4Trials/issues"
+  },
+  "homepage": "https://github.com/vinodbistvb/bootstrap4Trials#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
