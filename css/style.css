@@ -1,12 +1,31 @@
 .jumbotron{
-background-color: aliceblue;
+background-color: #9575cd;
+padding: 70px 30px 70px 30px;
+margin:0px auto;
+color: floralwhite;
+}
+
+.row-header{
+    margin: 0px auto;
+    padding: 0px auto;
 }
 
 .row-content{
     margin: 0px auto;
-    padding: 30px 10px 30px 10px;
+    padding: 50px 0px 50px 0px;
+    border-bottom: 1px ridge;
+    min-height: 400px;
 }
 
 .footer{
-    background-color: beige;
+    background-color:#D1C4E9;
+    margin: 0px auto;
+    padding: 20px 0px 20px 0px;
+    color: floralwhite;
+}
+
+.address{
+    font-size: 80%;
+    margin: 0px;
+    color: #0f0f0f;
 }
