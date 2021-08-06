@@ -38,3 +38,23 @@ body{
 .navbar-dark{
     background-color: #512DA8;
 }
+
+.btn-group.special {
+    display: flex;
+}
+
+.special .btn {
+    flex:1;
+}
+
+.checkbox{
+    padding: 20px 20px 20px 20px;
+}
+
+
+.tab-content{
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}

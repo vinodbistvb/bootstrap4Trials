@@ -44,8 +44,12 @@
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our
                         lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm align-self-center">
+                <div class="col-12 col-sm-3 align-self-center">
                     <img src="./img/logo.png" class="image-fluid">
+                </div>
+                <div class="col-12 col-sm-3">
+                    <a href="#reservationForm" class="btn btn-primary btn-lg btn-block active btn-warning" role="button"
+                        aria-pressed="true">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -65,7 +69,7 @@
                     <div class="media-body">
                         <h2 class="mt-0">Uthappizza
                             <span class="badge badge-danger">HOT</span>
-                            <span class="badge badge-pill badge-secondary">$12.10</span>
+                            <span class="badge badge-pill badge-secondary">$4.99</span>
                         </h2>
                         <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian
                             pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur
@@ -83,15 +87,18 @@
             </div>
             <div class="col col-sm col-md order-sm-last">
                 <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="./img/uthappizza.png" alt="Pizaa">
+
                     <div class="media-body">
-                        <h2 class="mt-0">Weekend Grand Buffet</h2>
+                        <h2 class="mt-0">Weekend Grand Buffet
+                            <span class="badge badge-danger">NEW</span>
+                        </h2>
                         <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five
                             different
                             salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing
                             bubbly
                             and soft drinks. All for just $19.99 per person </p>
                     </div>
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="./img/buffet.png" alt="Pizaa">
                 </div>
             </div>
         </div>
@@ -102,7 +109,7 @@
             </div>
             <div class="col-12 col-sm-8 order-sm-first">
                 <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="./img/uthappizza.png" alt="Pizaa">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="./img/alberto.png" alt="Pizaa">
                     <div class="media-body">
                         <h2 class="mt-0">Alberto Somayya</h2>
                         <h4>Executive Chef</h4>
@@ -111,6 +118,82 @@
                             having worked closely with whos-who in the culinary world, he specializes in
                             creating mouthwatering
                             Indo-Italian fusion experiences. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-content justify-content-center" id="reservationForm">
+            <div class="col-sm-8 col-md-8 ">
+                <div class="card">
+                    <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
+                    <div class="card-body">
+                        <div class="col-12 col-md-8">
+                            <form>
+                                <div class="form-group row">
+                                    <label for="numberOfGuests" class="col-12 col-sm-3 col-md-3 col-form-label"> Number
+                                        of Guests </label>
+                                    <div class="col-12 col-sm-3 col-md-9">
+                                        <div class="row checkbox">
+                                            <div class="form-check form-check-inline">
+                                                <input type="radio" class="form-check-input" id="optionOne"
+                                                    name="NumberOfGuests">
+                                                <label class="form-check-label" for="optionOne">
+                                                    1</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input type="radio" class="form-check-input" id="optionTwo"
+                                                    name="NumberOfGuests">
+                                                <label class="form-check-label" for="optionTwo">
+                                                    2</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input type="radio" class="form-check-input" id="optionThree"
+                                                    name="NumberOfGuests">
+                                                <label class="form-check-label" for="optionThree">
+                                                    3</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input type="radio" class="form-check-input" id="optionFour"
+                                                    name="NumberOfGuests">
+                                                <label class="form-check-label" for="optionFour">
+                                                    4</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input type="radio" class="form-check-input" id="optionFive"
+                                                    name="NumberOfGuests">
+                                                <label class="form-check-label" for="optionFive">
+                                                    5</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input type="radio" class="form-check-input" id="optionSix"
+                                                    name="NumberOfGuests">
+                                                <label class="form-check-label" for="optionSix">
+                                                    6</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="dateAndTime" class="col-12 col-sm-3 col-md-3 col-form-label"> Date and
+                                        Time </label>
+                                    <div class="col-12 col-sm-5 col-md-5">
+                                        <input type="date" class="form-control" id="date" name="date"
+                                            placeholder="Date">
+                                    </div>
+                                    <div class="col-12 col-sm-4 col-md-4">
+                                        <input type="time" class="form-control" id="time" name="time"
+                                            placeholder="Time">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="offset-md-3 col-md-10">
+                                        <button type="submit" class="btn btn-primary">
+                                            Reserve
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
