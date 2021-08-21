@@ -8,10 +8,12 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- Bootstrap CSS -->
+    <!--build:css css/main.css-->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" href="css/styles.css">
+    <!--endbbuild-->
     <title>Ristorante Con Fusion</title>
 </head>
 
@@ -33,8 +35,8 @@
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><span
                                 class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
-                <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+                <span  class="navbar-text">
+                    <a id ="loginButton">
                         <span class="fa fa-sign-in"></span> Login</a>
                 </span>
             </div>
@@ -207,8 +209,7 @@
                     <img src="./img/logo.png" class="image-fluid">
                 </div>
                 <div class="col-12 col-sm-3">
-                    <a role="button" class="btn btn-primary btn-lg btn-block active btn-warning" data-toggle="modal"
-                        data-target="#reservationModal">Reserve Table</a>
+                    <a id="reserveTableButton" role="button" class="btn btn-primary btn-lg btn-block active btn-warning" >Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -392,26 +393,12 @@
         </div>
     </footer>
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+        <!--build:js js/main.js-->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('#mycarousel').carousel({interval:2000});
-            $('#carouselButton').click(function(){
-                if ($('#carouselButton').children('span').hasClass('fa-pause')){
-                        $('#mycarousel').carousel('pause');
-                        $('#carouselButton').children('span').removeClass('fa-pause');
-                        $('#carouselButton').children('span').addClass('fa-play');
-                }
-                else if ($('#carouselButton').children('span').hasClass('fa-play')){
-                        $('#mycarousel').carousel('cycle');
-                        $('#carouselButton').children('span').removeClass('fa-play');
-                        $('#carouselButton').children('span').addClass('fa-pause');
-                }
-            });
-        })
-    </script>
+    <script src="js/scripts.js"></script>
+    <!--endbuild-->
 </body>
 
 </html>
